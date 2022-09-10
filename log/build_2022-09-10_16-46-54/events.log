@@ -1,0 +1,73 @@
+[0.000000] (-) TimerEvent: {}
+[0.001754] (warmup) JobQueued: {'identifier': 'warmup', 'dependencies': OrderedDict()}
+[0.001875] (warmup) JobStarted: {'identifier': 'warmup'}
+[0.096726] (-) TimerEvent: {}
+[0.197668] (-) TimerEvent: {}
+[0.298338] (-) TimerEvent: {}
+[0.399673] (-) TimerEvent: {}
+[0.500512] (-) TimerEvent: {}
+[0.600949] (-) TimerEvent: {}
+[0.701804] (-) TimerEvent: {}
+[0.803044] (-) TimerEvent: {}
+[0.904094] (-) TimerEvent: {}
+[1.005253] (-) TimerEvent: {}
+[1.105815] (-) TimerEvent: {}
+[1.206957] (-) TimerEvent: {}
+[1.308478] (-) TimerEvent: {}
+[1.409073] (-) TimerEvent: {}
+[1.509406] (-) TimerEvent: {}
+[1.609755] (-) TimerEvent: {}
+[1.710298] (-) TimerEvent: {}
+[1.810814] (-) TimerEvent: {}
+[1.911108] (-) TimerEvent: {}
+[2.012024] (-) TimerEvent: {}
+[2.113634] (-) TimerEvent: {}
+[2.214006] (-) TimerEvent: {}
+[2.237456] (warmup) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../build/warmup', 'build', '--build-base', '/home/hvakil/ros2_ws/src/comprobo_warmup/build/warmup/build', 'install', '--prefix', '/home/hvakil/ros2_ws/src/comprobo_warmup/install/warmup', '--record', '/home/hvakil/ros2_ws/src/comprobo_warmup/build/warmup/install.log', '--single-version-externally-managed'], 'cwd': '/home/hvakil/ros2_ws/src/comprobo_warmup/warmup', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'hvakil', 'SSH_AGENT_PID': '1860', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/hvakil/ros2_ws/install/neato2_interfaces/lib:/home/hvakil/ros2_ws/src/install/neato2_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib', 'HOME': '/home/hvakil', 'OLDPWD': '/home/hvakil/ros2_ws/src/comprobo_warmup/warmup/warmup', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '1639', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/hvakil/ros2_ws/install:/home/hvakil/ros2_ws/src/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'hvakil', 'JOURNAL_STREAM': '8:49319', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'hvakil', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/han-olinux:@/tmp/.ICE-unix/1898,unix/han-olinux:/tmp/.ICE-unix/1898', 'INVOCATION_ID': '57a75252a60c40ebadc5afe0e24758c5', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/709b665d_9ffe_4b93_a24d_80511c61a62c', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.865', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '32', 'AMENT_PREFIX_PATH': '/home/hvakil/ros2_ws/install/zz_test_pkg:/home/hvakil/ros2_ws/install/zzTestPkg:/home/hvakil/ros2_ws/install/testPkg:/home/hvakil/ros2_ws/install/neato_node2:/home/hvakil/ros2_ws/install/neato2_gazebo:/home/hvakil/ros2_ws/install/in_class_day03:/home/hvakil/ros2_ws/install/neato2_interfaces:/home/hvakil/ros2_ws/install/my_package:/home/hvakil/ros2_ws/install/in_class_day03_v2:/home/hvakil/ros2_ws/install/in_class_day02:/home/hvakil/ros2_ws/install/fix_scan:/home/hvakil/ros2_ws/src/install/zz_test_pkg:/home/hvakil/ros2_ws/src/install/neato_node2:/home/hvakil/ros2_ws/src/install/neato2_gazebo:/home/hvakil/ros2_ws/src/install/in_class_day03:/home/hvakil/ros2_ws/src/install/neato2_interfaces:/home/hvakil/ros2_ws/src/install/my_package:/home/hvakil/ros2_ws/src/install/in_class_day03_v2:/home/hvakil/ros2_ws/src/install/in_class_day02:/home/hvakil/ros2_ws/src/install/fix_scan:/opt/ros/foxy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/hvakil/ros2_ws/src/comprobo_warmup/build/warmup', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/hvakil/ros2_ws/src/comprobo_warmup/install/warmup/lib/python3.8/site-packages:/home/hvakil/ros2_ws/install/neato_node2/lib/python3.8/site-packages:/home/hvakil/ros2_ws/install/in_class_day03/lib/python3.8/site-packages:/home/hvakil/ros2_ws/install/neato2_interfaces/lib/python3.8/site-packages:/home/hvakil/ros2_ws/install/my_package/lib/python3.8/site-packages:/home/hvakil/ros2_ws/install/in_class_day02/lib/python3.8/site-packages:/home/hvakil/ros2_ws/src/install/neato_node2/lib/python3.8/site-packages:/home/hvakil/ros2_ws/src/install/in_class_day03/lib/python3.8/site-packages:/home/hvakil/ros2_ws/src/install/neato2_interfaces/lib/python3.8/site-packages:/home/hvakil/ros2_ws/src/install/my_package/lib/python3.8/site-packages:/home/hvakil/ros2_ws/src/install/in_class_day02/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1', 'VTE_VERSION': '6003', 'CMAKE_PREFIX_PATH': '/home/hvakil/ros2_ws/install/zz_test_pkg:/home/hvakil/ros2_ws/install/zzTestPkg:/home/hvakil/ros2_ws/install/testPkg:/home/hvakil/ros2_ws/install/neato2_gazebo:/home/hvakil/ros2_ws/install/in_class_day03:/home/hvakil/ros2_ws/install/neato2_interfaces:/home/hvakil/ros2_ws/install/in_class_day03_v2:/home/hvakil/ros2_ws/install/fix_scan:/home/hvakil/ros2_ws/src/install/zz_test_pkg:/home/hvakil/ros2_ws/src/install/neato2_gazebo:/home/hvakil/ros2_ws/src/install/in_class_day03:/home/hvakil/ros2_ws/src/install/neato2_interfaces:/home/hvakil/ros2_ws/src/install/in_class_day03_v2:/home/hvakil/ros2_ws/src/install/fix_scan'}, 'shell': False}
+[2.314648] (-) TimerEvent: {}
+[2.416030] (-) TimerEvent: {}
+[2.516954] (-) TimerEvent: {}
+[2.617771] (-) TimerEvent: {}
+[2.718580] (-) TimerEvent: {}
+[2.812607] (warmup) StdoutLine: {'line': b'running egg_info\n'}
+[2.818308] (warmup) StdoutLine: {'line': b'creating ../build/warmup/warmup.egg-info\n'}
+[2.818663] (-) TimerEvent: {}
+[2.818954] (warmup) StdoutLine: {'line': b'writing ../build/warmup/warmup.egg-info/PKG-INFO\n'}
+[2.820063] (warmup) StdoutLine: {'line': b'writing dependency_links to ../build/warmup/warmup.egg-info/dependency_links.txt\n'}
+[2.821624] (warmup) StdoutLine: {'line': b'writing entry points to ../build/warmup/warmup.egg-info/entry_points.txt\n'}
+[2.822271] (warmup) StdoutLine: {'line': b'writing requirements to ../build/warmup/warmup.egg-info/requires.txt\n'}
+[2.822760] (warmup) StdoutLine: {'line': b'writing top-level names to ../build/warmup/warmup.egg-info/top_level.txt\n'}
+[2.827473] (warmup) StdoutLine: {'line': b"writing manifest file '../build/warmup/warmup.egg-info/SOURCES.txt'\n"}
+[2.919145] (-) TimerEvent: {}
+[2.938937] (warmup) StdoutLine: {'line': b"reading manifest file '../build/warmup/warmup.egg-info/SOURCES.txt'\n"}
+[2.942194] (warmup) StdoutLine: {'line': b"writing manifest file '../build/warmup/warmup.egg-info/SOURCES.txt'\n"}
+[2.943799] (warmup) StdoutLine: {'line': b'running build\n'}
+[2.944270] (warmup) StdoutLine: {'line': b'running build_py\n'}
+[2.945130] (warmup) StdoutLine: {'line': b'creating /home/hvakil/ros2_ws/src/comprobo_warmup/build/warmup/build\n'}
+[2.945632] (warmup) StdoutLine: {'line': b'creating /home/hvakil/ros2_ws/src/comprobo_warmup/build/warmup/build/lib\n'}
+[2.945931] (warmup) StdoutLine: {'line': b'creating /home/hvakil/ros2_ws/src/comprobo_warmup/build/warmup/build/lib/warmup\n'}
+[2.946072] (warmup) StdoutLine: {'line': b'copying warmup/__init__.py -> /home/hvakil/ros2_ws/src/comprobo_warmup/build/warmup/build/lib/warmup\n'}
+[2.946274] (warmup) StdoutLine: {'line': b'copying warmup/square.py -> /home/hvakil/ros2_ws/src/comprobo_warmup/build/warmup/build/lib/warmup\n'}
+[2.946407] (warmup) StdoutLine: {'line': b'running install\n'}
+[2.950766] (warmup) StdoutLine: {'line': b'running install_lib\n'}
+[2.953492] (warmup) StdoutLine: {'line': b'creating /home/hvakil/ros2_ws/src/comprobo_warmup/install/warmup/lib/python3.8/site-packages/warmup\n'}
+[2.954351] (warmup) StdoutLine: {'line': b'copying /home/hvakil/ros2_ws/src/comprobo_warmup/build/warmup/build/lib/warmup/__init__.py -> /home/hvakil/ros2_ws/src/comprobo_warmup/install/warmup/lib/python3.8/site-packages/warmup\n'}
+[2.955911] (warmup) StdoutLine: {'line': b'copying /home/hvakil/ros2_ws/src/comprobo_warmup/build/warmup/build/lib/warmup/square.py -> /home/hvakil/ros2_ws/src/comprobo_warmup/install/warmup/lib/python3.8/site-packages/warmup\n'}
+[2.960034] (warmup) StdoutLine: {'line': b'byte-compiling /home/hvakil/ros2_ws/src/comprobo_warmup/install/warmup/lib/python3.8/site-packages/warmup/__init__.py to __init__.cpython-38.pyc\n'}
+[2.965380] (warmup) StdoutLine: {'line': b'byte-compiling /home/hvakil/ros2_ws/src/comprobo_warmup/install/warmup/lib/python3.8/site-packages/warmup/square.py to square.cpython-38.pyc\n'}
+[2.966067] (warmup) StdoutLine: {'line': b'running install_data\n'}
+[2.967212] (warmup) StdoutLine: {'line': b'creating /home/hvakil/ros2_ws/src/comprobo_warmup/install/warmup/share/ament_index\n'}
+[2.967682] (warmup) StdoutLine: {'line': b'creating /home/hvakil/ros2_ws/src/comprobo_warmup/install/warmup/share/ament_index/resource_index\n'}
+[2.968015] (warmup) StdoutLine: {'line': b'creating /home/hvakil/ros2_ws/src/comprobo_warmup/install/warmup/share/ament_index/resource_index/packages\n'}
+[2.968927] (warmup) StdoutLine: {'line': b'copying resource/warmup -> /home/hvakil/ros2_ws/src/comprobo_warmup/install/warmup/share/ament_index/resource_index/packages\n'}
+[2.970342] (warmup) StdoutLine: {'line': b'copying package.xml -> /home/hvakil/ros2_ws/src/comprobo_warmup/install/warmup/share/warmup\n'}
+[2.971435] (warmup) StdoutLine: {'line': b'running install_egg_info\n'}
+[2.979444] (warmup) StdoutLine: {'line': b'Copying ../build/warmup/warmup.egg-info to /home/hvakil/ros2_ws/src/comprobo_warmup/install/warmup/lib/python3.8/site-packages/warmup-0.0.0-py3.8.egg-info\n'}
+[2.981672] (warmup) StdoutLine: {'line': b'running install_scripts\n'}
+[3.019404] (-) TimerEvent: {}
+[3.058872] (warmup) StdoutLine: {'line': b'Installing square script to /home/hvakil/ros2_ws/src/comprobo_warmup/install/warmup/lib/warmup\n'}
+[3.059314] (warmup) StdoutLine: {'line': b"writing list of installed files to '/home/hvakil/ros2_ws/src/comprobo_warmup/build/warmup/install.log'\n"}
+[3.118355] (warmup) CommandEnded: {'returncode': 0}
+[3.121633] (-) TimerEvent: {}
+[3.166925] (warmup) JobEnded: {'identifier': 'warmup', 'rc': 0}
+[3.170059] (-) EventReactorShutdown: {}

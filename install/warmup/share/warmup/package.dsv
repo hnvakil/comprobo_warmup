@@ -1,0 +1,6 @@
+source;share/warmup/hook/pythonpath.ps1
+source;share/warmup/hook/pythonpath.dsv
+source;share/warmup/hook/pythonpath.sh
+source;share/warmup/hook/ament_prefix_path.ps1
+source;share/warmup/hook/ament_prefix_path.dsv
+source;share/warmup/hook/ament_prefix_path.sh

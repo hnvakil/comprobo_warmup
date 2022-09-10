@@ -1,0 +1,24 @@
+[1.754s] Invoking command in '/home/hvakil/ros2_ws/src/comprobo_warmup/warmup': PYTHONPATH=/home/hvakil/ros2_ws/src/comprobo_warmup/install/warmup/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/warmup build --build-base /home/hvakil/ros2_ws/src/comprobo_warmup/build/warmup/build install --prefix /home/hvakil/ros2_ws/src/comprobo_warmup/install/warmup --record /home/hvakil/ros2_ws/src/comprobo_warmup/build/warmup/install.log --single-version-externally-managed
+[2.218s] running egg_info
+[2.222s] writing ../build/warmup/warmup.egg-info/PKG-INFO
+[2.223s] writing dependency_links to ../build/warmup/warmup.egg-info/dependency_links.txt
+[2.224s] writing entry points to ../build/warmup/warmup.egg-info/entry_points.txt
+[2.225s] writing requirements to ../build/warmup/warmup.egg-info/requires.txt
+[2.225s] writing top-level names to ../build/warmup/warmup.egg-info/top_level.txt
+[2.285s] reading manifest file '../build/warmup/warmup.egg-info/SOURCES.txt'
+[2.288s] writing manifest file '../build/warmup/warmup.egg-info/SOURCES.txt'
+[2.288s] running build
+[2.289s] running build_py
+[2.289s] copying warmup/square.py -> /home/hvakil/ros2_ws/src/comprobo_warmup/build/warmup/build/lib/warmup
+[2.289s] running install
+[2.292s] running install_lib
+[2.293s] copying /home/hvakil/ros2_ws/src/comprobo_warmup/build/warmup/build/lib/warmup/square.py -> /home/hvakil/ros2_ws/src/comprobo_warmup/install/warmup/lib/python3.8/site-packages/warmup
+[2.294s] byte-compiling /home/hvakil/ros2_ws/src/comprobo_warmup/install/warmup/lib/python3.8/site-packages/warmup/square.py to square.cpython-38.pyc
+[2.295s] running install_data
+[2.296s] running install_egg_info
+[2.297s] removing '/home/hvakil/ros2_ws/src/comprobo_warmup/install/warmup/lib/python3.8/site-packages/warmup-0.0.0-py3.8.egg-info' (and everything under it)
+[2.297s] Copying ../build/warmup/warmup.egg-info to /home/hvakil/ros2_ws/src/comprobo_warmup/install/warmup/lib/python3.8/site-packages/warmup-0.0.0-py3.8.egg-info
+[2.300s] running install_scripts
+[2.346s] Installing square script to /home/hvakil/ros2_ws/src/comprobo_warmup/install/warmup/lib/warmup
+[2.347s] writing list of installed files to '/home/hvakil/ros2_ws/src/comprobo_warmup/build/warmup/install.log'
+[2.391s] Invoked command in '/home/hvakil/ros2_ws/src/comprobo_warmup/warmup' returned '0': PYTHONPATH=/home/hvakil/ros2_ws/src/comprobo_warmup/install/warmup/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/warmup build --build-base /home/hvakil/ros2_ws/src/comprobo_warmup/build/warmup/build install --prefix /home/hvakil/ros2_ws/src/comprobo_warmup/install/warmup --record /home/hvakil/ros2_ws/src/comprobo_warmup/build/warmup/install.log --single-version-externally-managed

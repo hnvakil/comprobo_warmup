@@ -1,0 +1,37 @@
+[2.238s] Invoking command in '/home/hvakil/ros2_ws/src/comprobo_warmup/warmup': PYTHONPATH=/home/hvakil/ros2_ws/src/comprobo_warmup/install/warmup/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/warmup build --build-base /home/hvakil/ros2_ws/src/comprobo_warmup/build/warmup/build install --prefix /home/hvakil/ros2_ws/src/comprobo_warmup/install/warmup --record /home/hvakil/ros2_ws/src/comprobo_warmup/build/warmup/install.log --single-version-externally-managed
+[2.812s] running egg_info
+[2.817s] creating ../build/warmup/warmup.egg-info
+[2.817s] writing ../build/warmup/warmup.egg-info/PKG-INFO
+[2.819s] writing dependency_links to ../build/warmup/warmup.egg-info/dependency_links.txt
+[2.820s] writing entry points to ../build/warmup/warmup.egg-info/entry_points.txt
+[2.821s] writing requirements to ../build/warmup/warmup.egg-info/requires.txt
+[2.821s] writing top-level names to ../build/warmup/warmup.egg-info/top_level.txt
+[2.826s] writing manifest file '../build/warmup/warmup.egg-info/SOURCES.txt'
+[2.937s] reading manifest file '../build/warmup/warmup.egg-info/SOURCES.txt'
+[2.941s] writing manifest file '../build/warmup/warmup.egg-info/SOURCES.txt'
+[2.942s] running build
+[2.943s] running build_py
+[2.944s] creating /home/hvakil/ros2_ws/src/comprobo_warmup/build/warmup/build
+[2.944s] creating /home/hvakil/ros2_ws/src/comprobo_warmup/build/warmup/build/lib
+[2.944s] creating /home/hvakil/ros2_ws/src/comprobo_warmup/build/warmup/build/lib/warmup
+[2.944s] copying warmup/__init__.py -> /home/hvakil/ros2_ws/src/comprobo_warmup/build/warmup/build/lib/warmup
+[2.944s] copying warmup/square.py -> /home/hvakil/ros2_ws/src/comprobo_warmup/build/warmup/build/lib/warmup
+[2.945s] running install
+[2.949s] running install_lib
+[2.952s] creating /home/hvakil/ros2_ws/src/comprobo_warmup/install/warmup/lib/python3.8/site-packages/warmup
+[2.953s] copying /home/hvakil/ros2_ws/src/comprobo_warmup/build/warmup/build/lib/warmup/__init__.py -> /home/hvakil/ros2_ws/src/comprobo_warmup/install/warmup/lib/python3.8/site-packages/warmup
+[2.955s] copying /home/hvakil/ros2_ws/src/comprobo_warmup/build/warmup/build/lib/warmup/square.py -> /home/hvakil/ros2_ws/src/comprobo_warmup/install/warmup/lib/python3.8/site-packages/warmup
+[2.958s] byte-compiling /home/hvakil/ros2_ws/src/comprobo_warmup/install/warmup/lib/python3.8/site-packages/warmup/__init__.py to __init__.cpython-38.pyc
+[2.964s] byte-compiling /home/hvakil/ros2_ws/src/comprobo_warmup/install/warmup/lib/python3.8/site-packages/warmup/square.py to square.cpython-38.pyc
+[2.964s] running install_data
+[2.966s] creating /home/hvakil/ros2_ws/src/comprobo_warmup/install/warmup/share/ament_index
+[2.966s] creating /home/hvakil/ros2_ws/src/comprobo_warmup/install/warmup/share/ament_index/resource_index
+[2.966s] creating /home/hvakil/ros2_ws/src/comprobo_warmup/install/warmup/share/ament_index/resource_index/packages
+[2.968s] copying resource/warmup -> /home/hvakil/ros2_ws/src/comprobo_warmup/install/warmup/share/ament_index/resource_index/packages
+[2.969s] copying package.xml -> /home/hvakil/ros2_ws/src/comprobo_warmup/install/warmup/share/warmup
+[2.970s] running install_egg_info
+[2.978s] Copying ../build/warmup/warmup.egg-info to /home/hvakil/ros2_ws/src/comprobo_warmup/install/warmup/lib/python3.8/site-packages/warmup-0.0.0-py3.8.egg-info
+[2.980s] running install_scripts
+[3.057s] Installing square script to /home/hvakil/ros2_ws/src/comprobo_warmup/install/warmup/lib/warmup
+[3.057s] writing list of installed files to '/home/hvakil/ros2_ws/src/comprobo_warmup/build/warmup/install.log'
+[3.119s] Invoked command in '/home/hvakil/ros2_ws/src/comprobo_warmup/warmup' returned '0': PYTHONPATH=/home/hvakil/ros2_ws/src/comprobo_warmup/install/warmup/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/warmup build --build-base /home/hvakil/ros2_ws/src/comprobo_warmup/build/warmup/build install --prefix /home/hvakil/ros2_ws/src/comprobo_warmup/install/warmup --record /home/hvakil/ros2_ws/src/comprobo_warmup/build/warmup/install.log --single-version-externally-managed
