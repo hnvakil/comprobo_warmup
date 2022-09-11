@@ -14,6 +14,7 @@ class SquareNode(Node):
     def run_loop(self):
         msg = Twist()
         msg.linear.x = 0.5
+        msg.angular.z = 0.5
         self.vel_pub.publish(msg)
 
 def main(args=None):
