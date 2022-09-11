@@ -15,12 +15,10 @@ class SquareNode(Node):
         msg = Twist()
         msg.linear.x = 0.5
         self.vel_pub.publish(msg)
-        print(start_time)
 
 def main(args=None):
     rclpy.init(args=args)
     node = SquareNode()
-    start_time = SquareNode.get_clock().now()
     rclpy.spin(node)
     rclpy.shutdown()
 
