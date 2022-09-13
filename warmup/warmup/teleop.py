@@ -12,7 +12,7 @@ class TeleopNode(Node):
     settings = termios.tcgetattr(sys.stdin)
     key = "a"
     def __init__(self):
-        super().__init__('square')
+        super().__init__('teleop')
         self.create_timer(0.1, self.run_loop)
         self.vel_pub = self.create_publisher(Twist, 'cmd_vel', 10)
         
