@@ -23,6 +23,7 @@ class WallFollowerNode(Node):
         # run scan
 
         # find min dist and heading
+        print(self.scan)
         min_dist = min(self.scan)
         min_dist_heading = self.scan.index(min_dist)
         print("Min dist: " + str(min_dist) + " of type: " + str(type(min_dist)))
