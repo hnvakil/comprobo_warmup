@@ -26,3 +26,12 @@ Person following works very simillarly to wall following, where the Neato assume
 
 ## Finite State Machine
 A classic way to bring seperate robot states together is through a finite state machine, which serves as a mechanism to switch the robot between discrete behaviors.  
+
+
+## Code Structure
+
+## Challenges
+
+## Potential Improvements
+
+## Key Takeaways
