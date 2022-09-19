@@ -25,7 +25,8 @@ setup(
             'wall_follower = warmup.wall_follower:main',
             'person_follower = warmup.person_follower:main',
             'person_follower_fsm = warmup.person_follower_fsm:main',
-            'obstacle_avoidance = warmup.obstacle_avoidance:main'
+            'obstacle_avoidance = warmup.obstacle_avoidance:main',
+            'finite_state = warmup.finite_state:main'
         ],
     },
 )
