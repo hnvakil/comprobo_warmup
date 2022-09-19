@@ -54,15 +54,12 @@ class WallFollowerNode(Node):
         print("Min dist: " + str(min_dist) + " of type: " + str(type(min_dist)))
         print("Min dist heading: " + str(min_dist_heading) + " of type: " + str(type(min_dist_heading)))
 
-
         #if heading less than 180, turn left else right
         dir = -1 
         if min_dist_heading > 90: #pos dir is ccw turn which turns left
             dir = 1
         
         msg.angular.z = abs(min_dist_heading - 90) * dir / 180 /10
-        
-
 
         #if heading within margin of error drive forward
         if abs(min_dist_heading - 90) <=5:
