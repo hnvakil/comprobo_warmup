@@ -12,7 +12,11 @@ What are the key takeaways from this assignment for future robotic programming p
 
 @allybbell
 
-In this project, we began our journey towards familiarity with ROS, in-person Neatos, and how to make these all work together through a series of executable tasks. We created the following behaviors for our robot: teleoperation, driving in a square, following the wall, following a person, and avoiding obstacles. We took a range of approaches to these problems individually, and brought them together through a finite state machine that allows the user to specify behavior.
+In this project, we began our journey towards familiarity with ROS, in-person Neatos, and how to make these all work together through a series of executable tasks. We created the following behaviors for our robot: teleoperation, driving in a square, following the wall, following a person, and avoiding obstacles. We took a range of approaches to these problems individually, and implemented a finite state machine using some of the autonomous behavious we had developed.
+
+## Code Structure
+
+![Node Structure](https://docs.ros.org/en/foxy/_images/Nodes-TopicandService.gif)
 
 ## Debugging
 @hnvakil
@@ -53,13 +57,9 @@ Person following works very simillarly to wall following, where the Neato assume
 A classic way to bring seperate robot states together is through a finite state machine, which serves as a mechanism to switch the robot between discrete behaviors. To explore this approach, we made a finite state machine that 
 
 
-## Code Structure
-
-![Node Structure](https://docs.ros.org/en/foxy/_images/Nodes-TopicandService.gif)
-
 ## Challenges
 
 ## Potential Improvements
+As we neared the end of this project, we wanted to combine all of our behaviors into one Node that could switch between the modes we had created based on key inputs. At first glance, it seemed to us like we could create a node that worked simillarly to the teleop node, and call to the different behaviors we had created for different keys that the user pressed. 
 
 ## Key Takeaways
-As we neared the end of this project, we wanted to combine all of our behaviors into one Node that could switch between the modes we had created based on key inputs.
