@@ -52,11 +52,9 @@ Person following works very simillarly to wall following, where the Neato assume
 //maybe viz for person follow @hnvakil
 
 ### Obstacle Avoidance
-@hnvakil
-
 We kept our obstacle avoidance behavior pretty simple, and followed the "potential fields" example in the project description. We started by taking a Lidar scan, then doing some preliminary filtering by setting any reading less than 0.1m or greater than 4m to 200m - large enough the later algorithm would essentially ignore it. Once we'd filtered the data, we took each distance reading and corresponding angle measurement, and used trigonometry to find an "x" and "y" weight for each reading. A smaller distance reading resulted in a larger "pressure" in the opposite direction, and adding up all the pressures gave us a "direction of least resistance". We had the robot turn towards that direction, and once it was within a few degrees of that heading, start driving forward. Since we checked the desired direction every time our run_loop ran, if we overshot we'd immediately stop and start turning towards the next direction of least resistance. In practice, this ended up with the robot slightly overshooting the point furthest from obstacles, and slowly driving around that point, overshooting each time.
 
-We didn't incorporate a "goal direction" like we could have, for the sake of time. To add that, we'd have to implement odometry to an extend we hadn't before, which would take a significantly increased time input. However, we feel we have the concept down from the robotics unit of QEA2.
+We didn't incorporate a "goal direction" like we could have, for the sake of time. To add that, we'd have to implement odometry to an extend we hadn't before, which would take a significantly increased time input. However, we feel we have the concept of positive and negative potential fields pretty well understood from the robotics unit of QEA2.
 
 ## Finite State Machine
 @allybbell
@@ -64,6 +62,8 @@ A classic way to bring seperate robot states together is through a finite state 
 
 
 ## Challenges
+One of our biggest challenges was working with the actual Neatos, which we expected. The simulated neato has perfectly accurate sensors with no noise, so when we developed our algorithms they didn't factor sensor noise in at all. For example, both our person and wall following programs find the nearest point, and act based on the relative position of that point. When noisy data causes blips of very close points all around the robot, our initial approach breaks down. (CLIP HERE?) We discussed potentially adding filtering, but since the next project is filtering it didn't seem a good use of time.
+
 
 ## Potential Improvements
 As we neared the end of this project, we wanted to combine all of our behaviors into one Node that could switch between the modes we had created based on key inputs. At first glance, it seemed to us like we could create a node that worked simillarly to the teleop node, and call to the different behaviors we had created for different keys that the user pressed. 
