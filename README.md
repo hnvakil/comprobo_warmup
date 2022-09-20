@@ -27,6 +27,8 @@ Print-based debugging was especially helpful when we were doing several layers o
 // screenshots of visualization
 ![Pring_Debug](https://github.com/hnvakil/comprobo_warmup/blob/main/images/Print-Based%20Debugging%20Example.png)
 
+Here's an example of our print-based debugging. The giant array is all the lidar readings, mostly useful to check for 0 values (which shouldn't be there). Min dist heading shows us the direction of the nearest point (90 means 90 degrees, so we're going perpendicular to the wall, the way we want to go), and "going" indicates we're driving forward and not just turning to align.
+
 ## Behaviors
 ### Teleop
 
