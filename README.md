@@ -12,7 +12,11 @@ What are the key takeaways from this assignment for future robotic programming p
 
 @allybbell
 
-In this project, we began our journey towards familiarity with ROS, in-person Neatos, and how to make these all work together through a series of executable tasks. We created the following behaviors for our robot: teleoperation, driving in a square, following the wall, following a person, and avoiding obstacles. We took a range of approaches to these problems individually, and brought them together through a finite state machine that allows the user to specify behavior.
+In this project, we began our journey towards familiarity with ROS, in-person Neatos, and how to make these all work together through a series of executable tasks. We created the following behaviors for our robot: teleoperation, driving in a square, following the wall, following a person, and avoiding obstacles. We took a range of approaches to these problems individually, and implemented a finite state machine using some of the autonomous behavious we had developed.
+
+## Code Structure
+
+![Node Structure](https://docs.ros.org/en/foxy/_images/Nodes-TopicandService.gif)
 
 ## Debugging
 @hnvakil
@@ -31,18 +35,18 @@ Our first contoller for the Neato was a way for us to drive it from our laptops.
 
 ### Square
 @allybbell
-The first autonomous behavior we developed for our robot was to drive in a square. The Neato drove this square based on a timer, in which a timer would start on initialization, drive the robot straight for a set amount of time, rotate the Neato ninety degrees, reset the timer, and begin again.
+The first autonomous behavior we developed for our robot was to drive in a square. The Neato drove this square based on a timer, in which a timer would start on initialization, drive the robot straight for a set amount of time, rotate the Neato ninety degrees, reset the timer, and begin again. This autonomous control was simple in the sense that the robot did not have to respond to any inputs from a person or any sensors, and operated on this loop as time as the only state-deciding factor. 
 
 ### Wall Following
 @allybbell
-In this behavior, the Neato drives parallel to a wall. It does this by looking for the nearest point (which we assume to be a wall) and adjust its heading to be perpendicular to the heading of this point. When it is aligned with the wall (the point closest to it) within a set margin of error, it drives straight along the wall.
+In this behavior, the Neato drives parallel to a wall. It does this by looking for the nearest point (which we assume to be a wall) and adjust its heading to be perpendicular to the heading of this point. When it is aligned parallel to what we are assuming to be the wall within an allowed margin of error, it drives straight along it. As it drives, it rechecks __, which handles 
 
 // maybe logic diagram
 // maybe viz for wall follow @hnvakil
 
 
 ### Person Following
-Person following works very simillarly to wall following, where the Neato assumes the closest point to be the person it's supposed to follow.
+Person following works very simillarly to wall following, where the Neato assumes the closest point to be the person it's supposed to follow. The logic works simillarly, where the bot wants to shift its heading based on the heading of it's closest point. 
 
 //maybe logic diagram
 //maybe viz for person follow @hnvakil
@@ -59,12 +63,9 @@ We didn't incorporate a "goal direction" like we could have, for the sake of tim
 A classic way to bring seperate robot states together is through a finite state machine, which serves as a mechanism to switch the robot between discrete behaviors. To explore this approach, we made a finite state machine that 
 
 
-## Code Structure
-
-
 ## Challenges
 
 ## Potential Improvements
+As we neared the end of this project, we wanted to combine all of our behaviors into one Node that could switch between the modes we had created based on key inputs. At first glance, it seemed to us like we could create a node that worked simillarly to the teleop node, and call to the different behaviors we had created for different keys that the user pressed. 
 
 ## Key Takeaways
-As we neared the end of this project, we wanted to combine all of our behaviors into one Node that could switch between the modes we had created based on key inputs.
