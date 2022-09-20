@@ -21,9 +21,6 @@ class ObstacleAvoidanceNode(Node):
         self.x_weight = 0
         self.y_weight = 0
 
-
-    
-    
     
     def run_loop(self):
         msg = Twist()
@@ -45,9 +42,6 @@ class ObstacleAvoidanceNode(Node):
             y_comp = math.cos(math.radians(angle))
             self.x_weight = self.x_weight + reading * x_comp
             self.y_weight += reading * y_comp
-
-        #print(self.x_weight)
-        #print(self.y_weight)
 
         y_go_weight = math.floor(-1 * self.y_weight)
         x_go_weight = math.floor(-1 * self.x_weight)
@@ -75,16 +69,11 @@ class ObstacleAvoidanceNode(Node):
         msg.angular.z = 0.2 * np.sign(go_heading)
         self.vel_pub.publish(msg)
         
-        
         #print(self.processed_scan)
         
 
     def process_scan(self, msg):
         self.scan = msg.ranges
-
-
-
-
 
 
 def main(args=None):

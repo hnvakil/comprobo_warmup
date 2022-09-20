@@ -40,8 +40,6 @@ class SquareNode(Node):
         self.vel_pub.publish(msg)
         
 
-        
-
 def main(args=None):
     global start_time 
     global current_time
