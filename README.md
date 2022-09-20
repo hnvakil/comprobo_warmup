@@ -16,7 +16,9 @@ In this project, we began our journey towards familiarity with ROS, in-person Ne
 
 ## Debugging
 @hnvakil
-Throughout this proccess, we needed tools to see what we were doing
+The project was complicated enough we needed tools to interpret and visualize the effect of the code we wrote. We used a combination of rviz and print-based debugging for this purpose. Print-based debugging was incredibly useful before we were able to get the neato to move or even the environment fully working. We were able to read data from the sensors and interpret it with the neato in place, and drive the neato around with teleop once we got that working and read the sensor input and the results of our logic. Once we had the robot moving, we used rviz to see what the sensors were seeing, as well as just running the robot in a sim. Running rviz let us see how noisy real world data was, and let us know some of our issues were due to faulty sensor input and not bad code.
+
+Print-based debugging was especially helpful when we were doing several layers of interpretation on the sensor input, such as when we listened to a scan, found the closest point and its direction, then had to figure out which way to turn to go the right way. Each step had a different issue to work out, and being able to sit the neato in an area that should generate a certain behavior and print out the direction it wanted to go based on the current code let us troubleshoot and fix errors.
 
 // screenshots of visualization
 
@@ -47,6 +49,10 @@ Person following works very simillarly to wall following, where the Neato assume
 
 ### Obstacle Avoidance
 @hnvakil
+
+We kept our obstacle avoidance behavior pretty simple, and followed the "potential fields" example in the project description. We started by taking a Lidar scan, then doing some preliminary filtering by setting any reading less than 0.1m or greater than 4m to 200m - large enough the later algorithm would essentially ignore it. Once we'd filtered the data, we took each distance reading and corresponding angle measurement, and used trigonometry to find an "x" and "y" weight for each reading. A smaller distance reading resulted in a larger "pressure" in the opposite direction, and adding up all the pressures gave us a "direction of least resistance". We had the robot turn towards that direction, and once it was within a few degrees of that heading, start driving forward. Since we checked the desired direction every time our run_loop ran, if we overshot we'd immediately stop and start turning towards the next direction of least resistance. In practice, this ended up with the robot slightly overshooting the point furthest from obstacles, and slowly driving around that point, overshooting each time.
+
+We didn't incorporate a "goal direction" like we could have, for the sake of time. To add that, we'd have to implement odometry to an extend we hadn't before, which would take a significantly increased time input. However, we feel we have the concept down from the robotics unit of QEA2.
 
 ## Finite State Machine
 @allybbell
