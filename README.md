@@ -64,12 +64,13 @@ We kept our obstacle avoidance behavior pretty simple, and followed the "potenti
 We didn't incorporate a "goal direction" like we could have, for the sake of time. To add that, we'd have to implement odometry to an extend we hadn't before, which would take a significantly increased time input. However, we feel we have the concept of positive and negative potential fields pretty well understood from the robotics unit of QEA2.
 
 ## Finite State Machine
-@allybbell
-A classic way to bring seperate robot states together is through a finite state machine, which serves as a mechanism to switch the robot between discrete behaviors. To explore this approach, we made a finite state machine that 
+A classic way to bring seperate robot states together is through a finite state machine, which serves as a mechanism to switch the robot between discrete behaviors. To explore this approach, we made a finite state machine that approached the nearest object, similar to the person follower. Unlike the person follower, the finite state machine starts spinning in circles instead of just stopping.
+
+This is a very simple finite state machine, but its architecture could be expanded to a more complicated machine. We could add more functions for different states, and additional logic at the start of the run_loop function to switch between them, but chose to keep it simple to focus on the concept of a finite state machine.
 
 
 ## Challenges
-One of our biggest challenges was working with the actual Neatos, which we expected. The simulated neato has perfectly accurate sensors with no noise, so when we developed our algorithms they didn't factor sensor noise in at all. For example, both our person and wall following programs find the nearest point, and act based on the relative position of that point. When noisy data causes blips of very close points all around the robot, our initial approach breaks down. (CLIP HERE?) We discussed potentially adding filtering, but since the next project is filtering it didn't seem a good use of time.
+One of our biggest challenges was working with the actual Neatos, which we expected. The simulated neato has perfectly accurate sensors with no noise, so when we developed our algorithms they didn't factor sensor noise in at all. For example, both our person and wall following programs find the nearest point, and act based on the relative position of that point. When noisy data causes blips of very close points all around the robot, our initial approach breaks down. We discussed potentially adding filtering, but since the next project is filtering it didn't seem a good use of time.
 
 
 ## Potential Improvements
