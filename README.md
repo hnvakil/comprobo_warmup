@@ -43,6 +43,7 @@ In this behavior, the Neato drives parallel to a wall. It does this by looking f
 
 // maybe logic diagram
 // maybe viz for wall follow @hnvakil
+![Wall_Following](https://github.com/hnvakil/comprobo_warmup/blob/main/images/Wall%20Follower%20Following.png)
 
 
 ### Person Following
