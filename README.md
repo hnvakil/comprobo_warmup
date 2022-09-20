@@ -16,7 +16,7 @@ In this project, we began our journey towards familiarity with ROS, in-person Ne
 
 ## Debugging
 @hnvakil
-Throughout this proccess, we needed tools to see what we were doing
+Throughout this proccess, we needed tools to see what we were doing 
 
 // screenshots of visualization
 
@@ -29,18 +29,18 @@ Our first contoller for the Neato was a way for us to drive it from our laptops.
 
 ### Square
 @allybbell
-The first autonomous behavior we developed for our robot was to drive in a square. The Neato drove this square based on a timer, in which a timer would start on initialization, drive the robot straight for a set amount of time, rotate the Neato ninety degrees, reset the timer, and begin again.
+The first autonomous behavior we developed for our robot was to drive in a square. The Neato drove this square based on a timer, in which a timer would start on initialization, drive the robot straight for a set amount of time, rotate the Neato ninety degrees, reset the timer, and begin again. This autonomous control was simple in the sense that the robot did not have to respond to any inputs from a person or any sensors, and operated on this loop as time as the only state-deciding factor. 
 
 ### Wall Following
 @allybbell
-In this behavior, the Neato drives parallel to a wall. It does this by looking for the nearest point (which we assume to be a wall) and adjust its heading to be perpendicular to the heading of this point. When it is aligned with the wall (the point closest to it) within a set margin of error, it drives straight along the wall.
+In this behavior, the Neato drives parallel to a wall. It does this by looking for the nearest point (which we assume to be a wall) and adjust its heading to be perpendicular to the heading of this point. When it is aligned parallel to what we are assuming to be the wall within an allowed margin of error, it drives straight along it. As it drives, it rechecks __, which handles 
 
 // maybe logic diagram
 // maybe viz for wall follow @hnvakil
 
 
 ### Person Following
-Person following works very simillarly to wall following, where the Neato assumes the closest point to be the person it's supposed to follow.
+Person following works very simillarly to wall following, where the Neato assumes the closest point to be the person it's supposed to follow. The logic works simillarly, where the bot wants to shift its heading based on the heading of it's closest point. 
 
 //maybe logic diagram
 //maybe viz for person follow @hnvakil
@@ -55,6 +55,7 @@ A classic way to bring seperate robot states together is through a finite state 
 
 ## Code Structure
 
+![Node Structure](https://docs.ros.org/en/foxy/_images/Nodes-TopicandService.gif)
 
 ## Challenges
 
