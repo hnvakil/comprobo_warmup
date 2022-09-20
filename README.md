@@ -35,3 +35,4 @@ A classic way to bring seperate robot states together is through a finite state 
 ## Potential Improvements
 
 ## Key Takeaways
+As we neared the end of this project, we wanted to combine all of our behaviors into one Node that could switch between the modes we had created based on key inputs.

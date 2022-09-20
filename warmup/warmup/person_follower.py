@@ -120,11 +120,6 @@ class PersonFollowerNode(Node):
     def process_scan(self, msg):
         self.scan = msg.ranges
     
-    
-
-
-
-
 
 def main(args=None):
     rclpy.init(args=args)
